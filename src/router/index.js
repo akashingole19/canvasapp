@@ -4,7 +4,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 
 const routes = [
     { path: '/', name: 'Home', component: Home },
-    { path: '/image/:initials', name: 'Image', component: ImageComponent, props: true },
+    { path: '/image/:fullName', name: 'Image', component: ImageComponent, props: true },
   ]
 
   const router = createRouter({

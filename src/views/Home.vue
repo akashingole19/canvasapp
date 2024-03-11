@@ -2,14 +2,14 @@
 export default {
   data() {
     return {
-        initials: ''
+      fullName: ''
     }
   },
   methods: {
     goToNextPage() {
       this.$router.push({
         name: 'Image',
-        params: {initials: this.initials},
+        params: {fullName: this.fullName},
       })
     }
   }
@@ -18,7 +18,7 @@ export default {
 
 <template>
   <div class="wrapper">
-    <input type="text" name="input" placeholder="Enter Initials" v-model="initials" />
+    <input type="text" name="input" placeholder="Enter Fullname" v-model="fullName" />
     <button @click="goToNextPage">Continue</button>
   </div>
 </template>
